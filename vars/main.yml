@@ -1,0 +1,27 @@
+---
+# Docker 版本（可以根据需要调整）
+docker_compose_version: "2.24.0"
+
+# 项目部署目录（Compose 文件存放位置）
+compose_project_dir: "/opt/myblog"
+
+# 博客对外访问端口
+wordpress_port: "9090"
+
+# MySQL root 密码
+mysql_root_password: "123456"
+
+# MySQL 数据库名
+mysql_database: "wordpress"
+
+# WordPress 数据库用户（这里用 root，也可以单独创建）
+wordpress_db_user: "root"
+
+# WordPress 数据库密码（与 MySQL root 密码一致）
+wordpress_db_password: "123456"
+
+# 镜像加速器地址列表（按需修改）
+registry_mirrors:
+  - "https://docker.xuanyuan.me"
+  - "https://docker.1ms.run"
+  - "https://docker.m.daocloud.io"
